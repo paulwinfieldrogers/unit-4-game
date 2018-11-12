@@ -28,6 +28,7 @@
     width: 150px;
     height: 300px;
     margin: 1px;
+    margin-top: 130px;
     background-color: purple
 }
 
@@ -35,7 +36,7 @@
     padding: 20px;
     width: 300px;
     margin: 20px;
-    margin-top: 150px;
+    margin-top: 160px;
     background-color: maroon;
 }
 
