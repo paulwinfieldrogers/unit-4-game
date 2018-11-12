@@ -1,0 +1,68 @@
+.wrapper{
+    background-image: url("../images/water.jpeg");
+}
+#header-square{
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    background-color: orange;
+}
+
+#instructions{
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    background-color: blue;
+}
+
+#computer-number{
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    background-color:yellow;
+}
+
+
+#wins-losses{
+    padding: 20px;
+    width: 150px;
+    height: 300px;
+    margin: 1px;
+    background-color: purple
+}
+
+#choose-crystals{
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    margin-top: 150px;
+    background-color: maroon;
+}
+
+#buttons{
+    text-align: top;
+    display: inline;
+}
+
+button{
+    display: inline;
+    width: 25px;
+    text-align: center;
+    float: left;
+}
+
+#total-score-bar{
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    background-color:magenta;
+ 
+}
+
+#total-score{
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    background-color:yellow;
+
+}
