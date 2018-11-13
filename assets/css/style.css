@@ -41,6 +41,7 @@
     width: 300px;
     margin: 20px;
     background-color:magenta;
+    height: 30px;
  
 }
 
@@ -48,6 +49,8 @@
     padding: 20px;
     width: 300px;
     margin: 20px;
+    height: 60px;
+    padding-bottom: 10px;
     background-color:yellow;
 
 }

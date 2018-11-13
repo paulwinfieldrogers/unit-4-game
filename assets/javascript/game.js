@@ -31,6 +31,7 @@ The random number shown at the start of the game should be between 19 - 120.
 Each crystal should have a random hidden value between 1 - 12.
 */
 
+//I've subbed out ducks for crystals to mix it up but left the variable names alone from the orig design
 var userTotalGuess = 0;
 var computerGuess = getRandomIntInclusive(19, 120);
 // 120-19+1 = 102 -this is the random result of computer guess btw 19-120
@@ -41,7 +42,7 @@ var crystalRandom4 = getRandomIntInclusive(1, 12); //one for each crystal
 var userWins = 0;
 var userLosses = 0;
 
-function getRandomIntInclusive(min, max) {
+function getRandomIntInclusive(min, max) { //this was a suggested function from my tutor on mdn instead of coding each line for this - I left the name the same as it was not mine
     return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
 }
 
@@ -72,7 +73,6 @@ $('#cristal1').click(function () {
         crystalRandom3 = getRandomIntInclusive(1, 12) //one for each crystal
         crystalRandom4 = getRandomIntInclusive(1, 12); //one for each crystal
         $('#computer-total').text(computerGuess)// computer guess resets within the fuction at end
-
     }
     else if (userTotalGuess > computerGuess) {
         userLosses++;
@@ -111,7 +111,6 @@ $('#cristal1').click(function () {
             crystalRandom3 = getRandomIntInclusive(1, 12) //one for each crystal
             crystalRandom4 = getRandomIntInclusive(1, 12); //one for each crystal
             $('#computer-total').text(computerGuess)// computer guess resets within the fuction at end
-    
         }
         else if (userTotalGuess > computerGuess) {
             userLosses++;
@@ -128,8 +127,6 @@ $('#cristal1').click(function () {
             console.log(userLosses)
         }
     });
-
-
 //button 3
 //On click need to set var = itself plus total so far
 $('#cristal3').click(function () {
@@ -151,7 +148,6 @@ $('#cristal3').click(function () {
         crystalRandom3 = getRandomIntInclusive(1, 12) //one for each crystal
         crystalRandom4 = getRandomIntInclusive(1, 12); //one for each crystal
         $('#computer-total').text(computerGuess)// computer guess resets within the fuction at end
-
     }
     else if (userTotalGuess > computerGuess) {
         userLosses++;
@@ -191,7 +187,6 @@ $('#cristal4').click(function () {
         crystalRandom3 = getRandomIntInclusive(1, 12) //one for each crystal
         crystalRandom4 = getRandomIntInclusive(1, 12); //one for each crystal
         $('#computer-total').text(computerGuess)// computer guess resets within the fuction at end
-
     }
     else if (userTotalGuess > computerGuess) {
         userLosses++;
