@@ -93,7 +93,7 @@ $('#cristal1').click(function () {
 //button 2
 //On click need to set var = itself plus total so far
     $('#cristal2').click(function () {
-        userTotalGuess = userTotalGuess + crystalRandom1;
+        userTotalGuess = userTotalGuess + crystalRandom2;
         $('#guessed-total').text(userTotalGuess);
         console.log(userTotalGuess + " user total guess");
         console.log(computerGuess);
@@ -133,7 +133,7 @@ $('#cristal1').click(function () {
 //button 3
 //On click need to set var = itself plus total so far
 $('#cristal3').click(function () {
-    userTotalGuess = userTotalGuess + crystalRandom1;
+    userTotalGuess = userTotalGuess + crystalRandom3;
     $('#guessed-total').text(userTotalGuess);
     console.log(userTotalGuess + " user total guess");
     console.log(computerGuess);
@@ -173,7 +173,7 @@ $('#cristal3').click(function () {
 //button 4
 //On click need to set var = itself plus total so far
 $('#cristal4').click(function () {
-    userTotalGuess = userTotalGuess + crystalRandom1;
+    userTotalGuess = userTotalGuess + crystalRandom4;
     $('#guessed-total').text(userTotalGuess);
     console.log(userTotalGuess + " user total guess");
     console.log(computerGuess);
