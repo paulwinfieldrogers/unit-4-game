@@ -10,7 +10,7 @@
 
 #instructions{
     padding: 20px;
-    width: 300px;
+    width: 800px;
     margin: 20px;
     background-color: blue;
 }
@@ -18,16 +18,22 @@
 #computer-number{
     padding: 20px;
     width: 300px;
-    margin: 20px;
     background-color:yellow;
+    height: 90pxS;
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin-left: 14px;
 }
 
 
 #wins-losses{
     padding: 20px;
     width: 300px;
-    margin: 20px;
-    background-color: rgb(240, 240, 240)
+    margin-left: 0;
+    height: 90px;
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 20px;
+    font-size: 25px;
 }
 
 #total-score-bar{
@@ -49,4 +55,12 @@
 .crystal-button{
     width: 100px;
     height: 100px;    
+}
+
+.container{
+    margin-left: -12px;
+}
+
+#buttons{
+    margin-left: 18px;
 }
