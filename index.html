@@ -1,58 +1,69 @@
-<!DOCTYPE = <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <div class= "wrapper">  
-    
+    <div class="wrapper">
+
         <div id=header-square>
-        <h1>CrystalCollector</h1>
+            <h1>CrystalCollector</h1>
         </div>
 
-        <div id = instructions>
-        <p>Instructions</p> 
+        <div id="instructions">
+            <p>Instructions</p>
         </div>
 
-        <div id = computer-number class = "col-md-8">
-        <p>Guessed by computer</p>
-        <span id = "computer-total"></span>
-        </div>
-
-        <div id = wins-losses class = "col-md-8">
-        <p>Wins and Losses placeholder</p>
-        <h3>Wins</h3>
-        <span id = "user-wins"></span>
-        <h3>Losses</h3>
-        <span id = "user-losses"></span>
-        </div>
-
-        <div id = choose-crystals>
-        <p>Choose Crystals placeholder</p>
-            <div id = buttons>
-            <button id = "cristal1" img src = "assets/images/redgem.jpeg" class = "img-responsive icons"></button>
-            <button id = "cristal2" img src = "assets/images/redgem.jpeg" class = "img-responsive icons"></button>
-            <button id = "cristal3" img src = "assets/images/redgem.jpeg" class = "img-responsive icons"></button>
-            <button id = "cristal4" img src = "assets/images/redgem.jpeg" class = "img-responsive icons"></button>
+        <div class="d-flex">
+            <div id=computer-number>
+                <p>Guessed by computer</p>
+                <span id="computer-total"></span>
             </div>
-        </div>  
 
-        <div id = total-score-bar>
-        <p>Total Score bar placeholder</p>
+            <div id="wins-losses">
+                <p>Wins and Losses placeholder</p>
+                <h3>Wins</h3>
+                <span id="user-wins"></span>
+                <h3>Losses</h3>
+                <span id="user-losses"></span>
+            </div>
+        </div>
+        <div id="buttons">
+            <button id="cristal1" class="crystal-button">
+                <img src="assets/images/redgem.jpeg" class="img-responsive icons">
+            </button>
+            <button id="cristal2" class="crystal-button">
+                <img src="assets/images/redgem.jpeg" class="img-responsive icons">
+            </button>
+            <button id="cristal3" class="crystal-button">
+                <img src="assets/images/redgem.jpeg" class="img-responsive icons">
+            </button>
+            <button id="cristal4" class="crystal-button">
+                <img src="assets/images/redgem.jpeg" class="img-responsive icons">
+            </button>
         </div>
 
-        <div id = total-score>
-        <p>Total Score placeholder</p>
+
+        <div id="total-score-bar">
+            <p>Your total score is:</p>
         </div>
-</div>
-<script src="assets/javascript/game.js"></script>
+
+        <div id="total-score">
+            <span id="guessed-total"></span>
+        </div>
+    </div>
+    <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
