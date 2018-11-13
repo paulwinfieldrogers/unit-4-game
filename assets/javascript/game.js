@@ -42,7 +42,7 @@ var crystalRandom4 = getRandomIntInclusive(1, 12); //one for each crystal
 var userWins = 0;
 var userLosses = 0;
 
-function getRandomIntInclusive(min, max) { //this was a suggested function from my tutor on mdn instead of coding each line for this - I left the name the same as it was not mine
+function getRandomIntInclusive(min, max) { //this was a suggested function from my tutor from mdn instead of coding each line for this - I left the name the same as it was not mine
     return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
 }
 
