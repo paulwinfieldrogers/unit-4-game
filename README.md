@@ -20,3 +20,4 @@ As a result I put:
 6. If/ else statement checking to see if userTotalGuess === computerGuess or userTotalGuess > to set win/lose condition
 7. If user wins or loses we increment the respective page element with wins++ or losses++ and write to the page with the jqery syntax
 8. We then reset the variables to random values (except for the wins and losses which persist).
+# Trivia-Game
