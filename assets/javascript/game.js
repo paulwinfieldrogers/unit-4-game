@@ -1,6 +1,3 @@
-//document.getElementById("red-cr").onclick = function(){
-//console.log("I'm the 1st button");
-//}
 /*psuedocode
 set variables for:
 user guess
@@ -33,15 +30,15 @@ Each crystal should have a random hidden value between 1 - 12.
 
 //I've subbed out ducks for crystals to mix it up but left the variable names alone from the orig design
 var userTotalGuess = 0;
-var computerGuess = getRandomIntInclusive(19, 120);
-var crystalRandom1 = getRandomIntInclusive(1, 12)
+var computerGuess = getRandomIntInclusive(19, 120);// random for computer guess
+var crystalRandom1 = getRandomIntInclusive(1, 12) //one for each crystal
 var crystalRandom2 = getRandomIntInclusive(1, 12) //one for each crystal
 var crystalRandom3 = getRandomIntInclusive(1, 12) //one for each crystal
 var crystalRandom4 = getRandomIntInclusive(1, 12); //one for each crystal
 var userWins = 0;
 var userLosses = 0;
 
-function getRandomIntInclusive(min, max) { //this was a suggested function from my tutor from mdn instead of coding each line for this - I left the name the same as it was not mine
+function getRandomIntInclusive(min, max) { //used by vaiables above this was a suggested function from my tutor from mdn instead of coding each line for this - I left the name the same as it was not mine.  Previously I had code for each variable.
     return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
 }
 //this is the main function which does most of the work - I removed this code fromm each button to simplify
@@ -75,10 +72,7 @@ else if (userTotalGuess > computerGuess) {
     console.log(userLosses)
 }
 };
-//end of new section
 
-//$(document).ready(function(){
-//}
 //button no. 1
 //On click need to set var = itself plus total so far
 
@@ -88,9 +82,6 @@ console.log(computerGuess + " test1");
 $('#cristal1').click(function () {
     userTotalGuess = userTotalGuess + crystalRandom1;
     $('#guessed-total').text(userTotalGuess);
-    console.log(userTotalGuess + " user total guess");
-    console.log(computerGuess);
-    console.log(crystalRandom1 + " button 1 random number");
     mainBody();
     });
 
@@ -99,9 +90,6 @@ $('#cristal1').click(function () {
 $('#cristal2').click(function () {
     userTotalGuess = userTotalGuess + crystalRandom2;
     $('#guessed-total').text(userTotalGuess);
-    console.log(userTotalGuess + " user total guess");
-    console.log(computerGuess);
-    console.log(crystalRandom1 + " button 2 random number");
     mainBody();
 });
 
@@ -110,9 +98,6 @@ $('#cristal2').click(function () {
 $('#cristal3').click(function () {
     userTotalGuess = userTotalGuess + crystalRandom3;
     $('#guessed-total').text(userTotalGuess);
-    console.log(userTotalGuess + " user total guess");
-    console.log(computerGuess);
-    console.log(crystalRandom1 + " button 3 random number");
     mainBody();
 });
 
@@ -121,8 +106,5 @@ $('#cristal3').click(function () {
 $('#cristal4').click(function () {
     userTotalGuess = userTotalGuess + crystalRandom4;
     $('#guessed-total').text(userTotalGuess);
-    console.log(userTotalGuess + " user total guess");
-    console.log(computerGuess);
-    console.log(crystalRandom1 + " button 4 random number");
     mainBody();
 });
